@@ -3,7 +3,7 @@
         <h1 class="h2">Informasi Buku</h1>
       </div>
 
-      <img src="<?php echo "http://localhost/books/assets/images/".$book['imgfile']?>" style="width: 200px; float: left; margin-right: 20px;">
+      <img src="<?php echo "http://localhost/UAS-Books--master/assets/images/".$book['imgfile']?>" style="width: 200px; float: left; margin-right: 20px;">
       <table style="font-size: 15px">
       <tr><td width="120px"><b>Judul Buku</b></td><td>:</td><td><?php echo $book['judul']?></td></tr>
       <tr><td><b>Pengarang</b></td><td>:</td><td><?php echo $book['pengarang']?></td></tr>
