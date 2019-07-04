@@ -1,9 +1,5 @@
-# Pemweb
-Pemrograman-Web
+# Books http://relaxingend.indoweb.xyz/
 
-Nama	: Dimas Galang Ramadhan<br>
-NIM	: K3517018<br>
-Kelas	: B<br><br>
-
-UTS : http://animatch.000webhostapp.com/ <br>
-UAS : http://relaxingend.indoweb.xyz/
+Nama	: Dimas Galang Ramadhan
+NIM	: K3517018
+Kelas	: B
