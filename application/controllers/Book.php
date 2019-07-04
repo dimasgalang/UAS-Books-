@@ -27,7 +27,7 @@ class Book extends CI_Controller {
 	public function insert(){
 
 		// target direktori fileupload
-		$target_dir = "assets/images/";
+		$target_dir = "C:\xampp\htdocs\UAS-Books--master\assets\images";
 		
 		// baca nama file upload
 		$filename = $_FILES["imgcover"]["name"];
@@ -79,7 +79,7 @@ class Book extends CI_Controller {
 	public function update(){
 
 		// target direktori fileupload
-		$target_dir = "assets/images/";
+		$target_dir = "C:\xampp\htdocs\UAS-Books--master\assets\images";
 		
 		// baca nama file upload
 		$filename = $_FILES["imgcover"]["name"];
