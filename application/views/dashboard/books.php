@@ -16,7 +16,6 @@
               <th>Judul Buku</th>
               <th>Pengarang</th>
               <th>Penerbit</th>
-              <th>Kategori</th>
               <th>Tahun Terbit</th>
               <th>Action</th>
             </tr>
@@ -31,7 +30,6 @@
             <td><?php echo $book_item['judul']?></td>
               <td><?php echo $book_item['pengarang']?></td>
               <td><?php echo $book_item['penerbit']?></td>
-              <td><?php echo $book_item['kategori']?></td>
               <td><?php echo $book_item['thnterbit']?></td>
               <td><?php echo anchor('book/view/'.$book_item['idbuku'], 'View', 'View Buku'); ?></td>
             </tr>
@@ -40,7 +38,6 @@
               <td><?php echo $book_item['judul']?></td>
               <td><?php echo $book_item['pengarang']?></td>
               <td><?php echo $book_item['penerbit']?></td>
-              <td><?php echo $book_item['kategori']?></td>
               <td><?php echo $book_item['thnterbit']?></td>
               <td><?php echo anchor('book/view/'.$book_item['idbuku'], 'View', 'View Buku'); ?> | <?php echo anchor('book/edit/'.$book_item['idbuku'], 'Edit', 'Edit Buku'); ?> | <?php echo anchor('book/delete/'.$book_item['idbuku'], 'Del', 'Hapus Buku'); ?></td>
             </tr>
