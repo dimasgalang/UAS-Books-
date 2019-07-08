@@ -46,12 +46,13 @@ class User_model extends CI_Model {
 	}
 
 	// method untuk update data user ke tabel 'users'
-	public function editUser($id, $username, $password, $fullname){
+	public function editUser($id, $username, $password, $fullname, $role){
 		$data = array(
 					"id" => $id,
 					"username" => $username,
 					"password" => $password,
 					"fullname" => $fullname,
+					"role" => $role,
 		);
 		$this->db->where('id', $id);
 		$query = $this->db->update('users', $data);
