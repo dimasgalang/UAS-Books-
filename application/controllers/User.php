@@ -29,7 +29,7 @@ class User extends CI_Controller {
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 		$fullname = $_POST['fullname'];
-        $role = $_POST['role'];
+        	$role = $_POST['role'];
         
 		// panggil method insertUser() di model 'user_model' untuk menjalankan query insert
 		$this->user_model->insertUser($username, $password, $fullname, $role);
@@ -49,15 +49,16 @@ class User extends CI_Controller {
 	}
 
 	// method untuk update data user berdasarkan id
-	public function update($id){
+	public function update(){
         // baca data dari form insert user
         $id = $_POST['id'];
         $username = $_POST['username'];
         $password = $_POST['password'];
         $fullname = $_POST['fullname'];
+	$role = $_POST['role'];
 
 		// panggil method insertUserk() di model 'user_model' untuk menjalankan query insert
-		$this->user_model->editUser($id, $username, $password, $fullname);
+		$this->user_model->editUser($id, $username, $password, $fullname,$role);
 
 		// arahkan ke method 'users' di kontroller 'dashboard'
 		redirect('dashboard/users');
