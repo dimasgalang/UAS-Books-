@@ -31,7 +31,7 @@
           <td><?php echo $user_item['password']?></td>
           <td><?php echo $user_item['fullname']?></td>
           <td><?php echo $user_item['role']?></td>
-          <td><?php echo anchor('user/edit/'.$user_item['username'], 'Edit', 'Edit User'); ?> | <?php echo anchor('user/delete/'.$user_item['username'], 'Del', 'Hapus User'); ?></td>
+          <td><?php echo anchor('user/edit/'.$user_item['id'], 'Edit', 'Edit User'); ?> | <?php echo anchor('user/delete/'.$user_item['id'], 'Del', 'Hapus User'); ?></td>
         </tr>
         <?php endforeach; ?>
       </tbody>
