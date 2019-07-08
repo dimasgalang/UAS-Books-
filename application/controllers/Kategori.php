@@ -46,7 +46,7 @@ class Kategori extends CI_Controller {
 	}
 
 	// method untuk update data buku berdasarkan id
-	public function update($idkategori){
+	public function update(){
         // baca data dari form insert user
         $idkategori = $_POST['idkategori'];
         $kategori = $_POST['kategori'];
