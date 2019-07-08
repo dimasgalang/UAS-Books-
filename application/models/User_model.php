@@ -9,21 +9,21 @@ class User_model extends CI_Model {
 	}
 
 	// method untuk menampilkan data user
-	public function showUser($username = false){
+	public function showUser($id = false){
 		// membaca semua data user dari tabel 'users'
-		if ($username == false){
+		if ($id == false){
 			$query = $this->db->get('users');
 			return $query->result_array();
 		} else {
 			// membaca data user berdasarkan username
-			$query = $this->db->get_where('users', array("username" => $username));
+			$query = $this->db->get_where('users', array("id" => $id));
 			return $query->row_array();
 		}
 	}
 
 	// method untuk hapus data user berdasarkan username
-	public function delUser($username){
-		$this->db->delete('users', array("username" => $username));
+	public function delUser($id){
+		$this->db->delete('users', array("id" => $id));
 	}
 
 	// method untuk mencari data user berdasarkan key
