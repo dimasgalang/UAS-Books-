@@ -39,6 +39,16 @@
                   <input type="text" class="form-control" name="fullname" placeholder="Fullname" value="<?php echo $user['fullname']?>">
               </div>
           </div>
+	
+					<div class="form-group row">
+              <label for="role" class="col-sm-2 col-form-label">Role</label>
+              <div class="col-sm-10">
+                  <select class="form-control" name="role">
+                      <option value="Admin">Admin</option>
+                      <option value="Operator">Operator</option>
+                  </select>
+              </div>
+          </div>
 
           <div class="form-group row">
               <div class="col-sm-2">
