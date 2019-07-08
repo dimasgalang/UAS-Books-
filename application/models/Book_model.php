@@ -48,12 +48,12 @@ class Book_model extends CI_Model {
 	// method untuk mencari data buku berdasarkan key
 	public function findBook($key, $limit, $start){
 
-		$this->db->where('books.idkategori=kategori.idkategori');
+		//$this->db->where('books.idkategori=kategori.idkategori');
 		$this->db->like('judul', $key);
 		$this->db->or_like('pengarang', $key);
 		$this->db->or_like('penerbit', $key);
 		$this->db->or_like('thnterbit', $key);
-		$query = $this->db->get('books,kategori', $limit, $start);
+		$query = $this->db->get('books', $limit, $start);
 		return $query->result_array();
 	}
 
